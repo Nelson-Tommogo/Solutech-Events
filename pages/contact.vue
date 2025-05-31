@@ -9,5 +9,4 @@
 
 
 <style scoped>
-/* Your scoped styles here */
 </style>
