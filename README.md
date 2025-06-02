@@ -1,19 +1,19 @@
 # 🌍 Solutech EventsHub – Frontend Prototype
 
-Solutech EventsHub is a simple and elegant **event management system** frontend prototype that allows users to:
+Solutech EventsHub is a Nuxt.js-powered event management system frontend prototype that allows users to:
 
 - 🌟 Register for tech events  
 - 🔍 View upcoming and featured events  
 - 📄 Learn about Solutech and its mission  
 - 📬 Reach out via a contact form  
 
-> ⚠️ **Note:** This frontend is not yet connected to the backend APIs. However, all APIs have been tested and are up and running.
+> ⚠️ **Note:** This frontend is not yet connected to any APIs, but it's fully functional as a UI prototype.
 
 ---
 
 ## 🔗 Live Demo
 
-**Frontend Hosted on Vercel:**  
+**Hosted on Vercel:**  
 [https://solutech-events.vercel.app/](https://solutech-events.vercel.app/)
 
 ---
@@ -29,35 +29,21 @@ The application consists of **4 main pages**:
 
 ---
 
-## 🎯 Discover Tech Events That Matter
+## 💡 Key Features
 
-Connect with innovators and thought leaders across Africa’s fastest-growing tech sectors.
-
-### 🌿 Upcoming Events:
-
-| Event Name                  | Date         | Description                                                      |
-|-----------------------------|--------------|------------------------------------------------------------------|
-| **Block Chain Kenya**       | Aug 20, 2025 | Explore innovations in smart agriculture and digital farming.    |
-| **Cyber Security 2025**     | Aug 20, 2025 | Dive into top cybersecurity trends and events.                   |
-| **Africa AgriTech Expo**    | Sep 5, 2025  | Africa’s biggest gathering of AgriTech minds and startups.       |
-| **GreenTech Nairobi Meetup**| Oct 10, 2025 | A networking event for green tech entrepreneurs.                 |
+- 🎫 **View Events** – Explore a list of upcoming tech events.
+- 📝 **Register for Events** – Users can fill in their name, email, and phone to sign up.
+- ✅ **Feedback Messaging** – Users receive a simple success or failure message after submitting the registration form.
+- ⚡ **Fast & Lightweight UI** – Built with Nuxt.js and Tailwind CSS.
+- 🔁 **Data Fetching Ready** – Uses Nuxt's `useFetch` to fetch event data or send form submissions.
 
 ---
 
-## 🚀 Technologies Used
+## 🛠️ Tech Stack
 
-- **React**
-- **HTML/CSS**
-- **JavaScript**
+- **Nuxt.js 3 (Vue 3 + Composition API)**
+- **Tailwind CSS** for styling
 - **Vercel** for deployment
-
----
-
-## 🔧 Backend API Info
-
-- **GitHub Repository:** [https://github.com/Nelson-Tommogo/solutech-apis](https://github.com/Nelson-Tommogo/solutech-apis)  
-- **Database:** MySQL via CPanel  
-- **Status:** APIs are tested and running, integration with frontend is pending
 
 ---
 
