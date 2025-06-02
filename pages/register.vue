@@ -1,13 +1,10 @@
 <template>
     <div class="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100 flex items-center justify-center p-4">
       <div class="w-full max-w-md">
-        <!-- Animated Card -->
         <div class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl">
-          <!-- Decorative header strip -->
           <div class="h-2 bg-gradient-to-r from-blue-500 to-blue-600"></div>
           
           <div class="p-8">
-            <!-- Logo and Title -->
             <div class="flex justify-center mb-6">
               <div class="bg-blue-100 p-3 rounded-full">
                 <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -18,9 +15,7 @@
             <h2 class="text-center text-3xl font-bold text-gray-800 mb-2">Create Account</h2>
             <p class="text-center text-gray-500 mb-8">Register for admin access</p>
   
-            <!-- Registration Form -->
             <form class="space-y-5" @submit.prevent="handleRegister">
-              <!-- Name Input -->
               <div class="relative">
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +31,6 @@
                 >
               </div>
   
-              <!-- Email Input -->
               <div class="relative">
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +46,6 @@
                 >
               </div>
   
-              <!-- Password Input -->
               <div class="relative">
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +61,6 @@
                 >
               </div>
   
-              <!-- Password Requirements -->
               <div class="text-xs text-gray-500 p-3 bg-gray-50 rounded-lg">
                 <p class="font-medium mb-1">Password requirements:</p>
                 <ul class="list-disc list-inside space-y-1">
@@ -78,7 +70,6 @@
                 </ul>
               </div>
   
-              <!-- Submit Button -->
               <button
                 type="submit"
                 class="w-full py-3 px-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition duration-200 flex items-center justify-center"
@@ -94,7 +85,6 @@
                 </span>
               </button>
   
-              <!-- Error Message -->
               <div v-if="error" class="p-3 bg-red-50 text-red-600 rounded-lg text-sm flex items-center">
                 <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -103,7 +93,6 @@
               </div>
             </form>
   
-            <!-- Login Link -->
             <div class="mt-6 text-center text-sm text-gray-500">
               <p>Already have an account? <router-link to="/login" class="font-medium text-blue-600 hover:text-blue-500 transition duration-200">Sign in</router-link></p>
             </div>
@@ -148,7 +137,6 @@
         return
       }
   
-      // Redirect to login after successful registration
       router.push('/login')
     } catch (e) {
       error.value = 'An unexpected error occurred. Please try again later.'
@@ -157,3 +145,17 @@
     }
   }
   </script>
+  
+  <style>
+  .animate-spin {
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  </style>
