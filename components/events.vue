@@ -178,7 +178,7 @@ export default {
         {
           id: 2,
           image: 'https://i.pinimg.com/736x/fb/bc/97/fbbc97ad7d9865aa65b42378d75ccb0b.jpg',
-          date: 'Aug 20, 2025',
+          date: 'Sep 02, 2025',
           title: 'Cyber Security 2025',
           location: 'Nairobi, Kenya',
           description: 'Explore Cyber Security Top events.'
