@@ -5,7 +5,7 @@
           <!-- Brand -->
           <div>
             <h3 class="text-3xl font-bold">
-              Event<span class="text-indigo-500">App</span>
+              Solutech<span class="text-indigo-500">Events</span>
             </h3>
             <p class="mt-4 text-gray-400">
               Connecting tech enthusiasts with Africa's most exciting technology events and conferences.

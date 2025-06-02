@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto px-4 py-10">
-    <!-- Event List (Hidden when form is visible) -->
+    <!-- Event List -->
     <div v-if="!showForm && !showConfirmation">
       <div class="text-center mb-10">
         <h1 class="text-4xl font-bold text-green-700 mb-3">🌿 Upcoming Events</h1>
@@ -11,7 +11,7 @@
         <div
           v-for="event in events"
           :key="event.id"
-          class="border rounded-lg shadow hover:shadow-lg transition overflow-hidden"
+          class="border border-gray-200 rounded-xl shadow-md hover:shadow-xl hover:border-green-500 transition-all duration-300 overflow-hidden bg-white hover:scale-105 transform"
         >
           <img :src="event.image" :alt="event.title" class="w-full h-48 object-cover" />
           <div class="p-5">
@@ -24,7 +24,7 @@
             <p class="text-gray-700 mb-4">{{ event.description }}</p>
             <button
               @click="confirmRegistration(event)"
-              class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 flex items-center"
+              class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition flex items-center shadow hover:shadow-lg"
             >
               <i class="fas fa-user-plus mr-2"></i> Register
             </button>
@@ -35,7 +35,7 @@
 
     <!-- Confirmation Modal -->
     <div v-if="showConfirmation" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div class="bg-white rounded-lg p-6 shadow-lg max-w-md w-full text-center">
+      <div class="bg-white rounded-xl p-6 shadow-2xl max-w-md w-full text-center">
         <h2 class="text-xl font-bold text-green-700 mb-4">Confirm Registration</h2>
         <p class="text-gray-700 mb-6">
           Do you want to register for <span class="font-semibold">{{ selectedEvent.title }}</span>
@@ -45,13 +45,13 @@
         <div class="flex justify-center gap-4">
           <button
             @click="proceedToForm"
-            class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
+            class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 shadow hover:shadow-lg transition"
           >
             Yes
           </button>
           <button
             @click="cancelConfirmation"
-            class="bg-gray-300 text-gray-700 px-6 py-2 rounded hover:bg-gray-400"
+            class="bg-gray-300 text-gray-700 px-6 py-2 rounded hover:bg-gray-400 transition"
           >
             No
           </button>
@@ -60,7 +60,7 @@
     </div>
 
     <!-- Registration Form -->
-    <div v-if="showForm" class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <div v-if="showForm" class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-2xl">
       <h2 class="text-3xl font-bold text-green-700 mb-6 text-center">
         <i class="fas fa-ticket-alt mr-2"></i> Register for {{ selectedEvent.title }}
       </h2>
@@ -144,7 +144,7 @@
         <div class="flex justify-between items-center">
           <button
             type="submit"
-            class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 flex items-center"
+            class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 flex items-center shadow hover:shadow-lg transition"
           >
             <i class="fas fa-paper-plane mr-2"></i> Submit
           </button>
@@ -184,7 +184,7 @@ export default {
           description: 'Explore Cyber Security Top events.'
         },
         {
-          id: 2,
+          id: 3,
           image: 'https://i.pinimg.com/736x/ec/be/07/ecbe07eabb98f298a78001ef4892a3a0.jpg',
           date: 'Sep 5, 2025',
           title: 'Africa AgriTech Expo',
@@ -192,7 +192,7 @@ export default {
           description: 'Africa’s biggest gathering of AgriTech minds and startups.'
         },
         {
-          id: 3,
+          id: 4,
           image: 'https://i.pinimg.com/736x/73/71/de/7371de98f76e1dad66b48f4aa8bac4bb.jpg',
           date: 'Oct 10, 2025',
           title: 'GreenTech Nairobi Meetup',
@@ -249,3 +249,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+/* Optional: subtle transition to scale cards */
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: scale(1.02);
+}
+</style>

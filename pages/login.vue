@@ -67,7 +67,7 @@
                   </label>
                 </div>
                 <div>
-                  <a href="#" class="text-sm font-medium text-green-600 hover:text-green-500 transition duration-200">
+                  <a href="/forgotpassword" class="text-sm font-medium text-green-600 hover:text-green-500 transition duration-200">
                     Forgot password?
                   </a>
                 </div>
