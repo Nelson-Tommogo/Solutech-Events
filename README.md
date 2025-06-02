@@ -1,75 +1,77 @@
-# Nuxt Minimal Starter
+# 🌍 Solutech EventsHub – Frontend Prototype
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Solutech EventsHub is a simple and elegant **event management system** frontend prototype that allows users to:
 
-## Setup
+- 🌟 Register for tech events  
+- 🔍 View upcoming and featured events  
+- 📄 Learn about Solutech and its mission  
+- 📬 Reach out via a contact form  
 
-Make sure to install dependencies:
+> ⚠️ **Note:** This frontend is not yet connected to the backend APIs. However, all APIs have been tested and are up and running.
 
-```bash
-# npm
-npm install
+---
 
-# pnpm
-pnpm install
+## 🔗 Live Demo
 
-# yarn
-yarn install
+**Frontend Hosted on Vercel:**  
+[https://solutech-events.vercel.app/](https://solutech-events.vercel.app/)
 
-# bun
-bun install
-```
+---
 
-## Development Server
+## 🧩 Pages Overview
 
-Start the development server on `http://localhost:3000`:
+The application consists of **4 main pages**:
 
-```bash
-# npm
-npm run dev
+1. **Home** – Landing page with featured event highlights.
+2. **About** – Describes Solutech Events and its purpose.
+3. **Events** – Lists all upcoming events with dates and details.
+4. **Contact** – A simple contact form for inquiries.
 
-# pnpm
-pnpm dev
+---
 
-# yarn
-yarn dev
+## 🎯 Discover Tech Events That Matter
 
-# bun
-bun run dev
-```
+Connect with innovators and thought leaders across Africa’s fastest-growing tech sectors.
 
-## Production
+### 🌿 Upcoming Events:
 
-Build the application for production:
+| Event Name                  | Date         | Description                                                      |
+|-----------------------------|--------------|------------------------------------------------------------------|
+| **Block Chain Kenya**       | Aug 20, 2025 | Explore innovations in smart agriculture and digital farming.    |
+| **Cyber Security 2025**     | Aug 20, 2025 | Dive into top cybersecurity trends and events.                   |
+| **Africa AgriTech Expo**    | Sep 5, 2025  | Africa’s biggest gathering of AgriTech minds and startups.       |
+| **GreenTech Nairobi Meetup**| Oct 10, 2025 | A networking event for green tech entrepreneurs.                 |
 
-```bash
-# npm
-npm run build
+---
 
-# pnpm
-pnpm build
+## 🚀 Technologies Used
 
-# yarn
-yarn build
+- **React**
+- **HTML/CSS**
+- **JavaScript**
+- **Vercel** for deployment
 
-# bun
-bun run build
-```
+---
 
-Locally preview production build:
+## 🔧 Backend API Info
 
-```bash
-# npm
-npm run preview
+- **GitHub Repository:** [https://github.com/Nelson-Tommogo/solutech-apis](https://github.com/Nelson-Tommogo/solutech-apis)  
+- **Database:** MySQL via CPanel  
+- **Status:** APIs are tested and running, integration with frontend is pending
 
-# pnpm
-pnpm preview
+---
 
-# yarn
-yarn preview
+## 🔗 Quick Links
 
-# bun
-bun run preview
-```
+- [Home](https://solutech-events.vercel.app/)
+- [About](https://solutech-events.vercel.app/about)
+- [Events](https://solutech-events.vercel.app/events)
+- [Contact](https://solutech-events.vercel.app/contact)
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+---
+
+## 🤝 Connect With Us
+
+Solutech EventsHub – Connecting tech enthusiasts with Africa's most exciting technology events and conferences.
+
+**© 2025 EventApp. All rights reserved.**
